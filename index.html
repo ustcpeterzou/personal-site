@@ -1,141 +1,229 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>您的名字 - 个人主页</title>
+    <title>Jinjiang Zou - Personal Homepage</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Source+Sans+Pro:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- 导航栏 -->
+    <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
-            <div class="nav-brand">您的名字</div>
+            <div class="nav-brand">Jinjiang Zou</div>
             <ul class="nav-menu">
-                <li><a href="#home">首页</a></li>
-                <li><a href="#about">关于我</a></li>
-                <li><a href="#experience">经历</a></li>
-                <li><a href="#projects">项目</a></li>
-                <li><a href="#publications">成果</a></li>
-                <li><a href="#contact">联系</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#publications">Publications</a></li>
+                <li><a href="#teaching">Teaching</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
         </div>
     </nav>
 
-    <!-- 首页部分 -->
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <h1>您好，我是 <span class="highlight">您的名字</span></h1>
-            <p class="subtitle">您的职位/专业</p>
-            <p class="description">在这里写下您的简短介绍...</p>
-            <div class="hero-buttons">
-                <a href="#contact" class="btn btn-primary">联系我</a>
-                <a href="#projects" class="btn btn-secondary">查看项目</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- 关于我部分 -->
-    <section id="about" class="section">
-        <div class="container">
-            <h2 class="section-title">关于我</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>在这里详细介绍您的背景、教育经历、研究方向等。</p>
-                    <p>例如：我是XX大学XX专业的学生/研究员，主要研究方向包括...</p>
-                    <div class="skills">
-                        <h3>技术栈</h3>
-                        <div class="skill-tags">
-                            <span class="skill-tag">Python</span>
-                            <span class="skill-tag">JavaScript</span>
-                            <span class="skill-tag">HTML/CSS</span>
-                            <span class="skill-tag">React</span>
-                            <span class="skill-tag">Git</span>
-                        </div>
+    <!-- Main Content -->
+    <main class="container">
+        <!-- Home Section -->
+        <section id="home" class="section">
+            <div class="home-content">
+                <div class="home-text">
+                    <h1>Jinjiang Zou</h1>
+                    <p class="subtitle">Your Position/Title</p>
+                    <p class="affiliation">Your University/Institution</p>
+                    
+                    <div class="contact-info">
+                        <p><i class="fas fa-map-marker-alt"></i> Your Address</p>
+                        <p><i class="fas fa-envelope"></i> your.email@example.com</p>
+                        <p><i class="fas fa-phone"></i> +1 (123) 456-7890</p>
+                    </div>
+                    
+                    <div class="social-links">
+                        <a href="https://github.com/jinjiangzou" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="#" target="_blank"><i class="fas fa-graduation-cap"></i></a>
                     </div>
                 </div>
+                
+                <div class="home-image">
+                    <img src="https://via.placeholder.com/300x300" alt="Profile Photo" class="profile-photo">
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- 经历部分 -->
-    <section id="experience" class="section bg-light">
-        <div class="container">
-            <h2 class="section-title">经历</h2>
+        <!-- About Section -->
+        <section id="about" class="section">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <p>Welcome to my personal homepage! I am [Your Name], a [Your Position] at [Your University/Institution]. My research interests lie in [Your Research Areas].</p>
+                
+                <p>I received my Ph.D. in [Your Field] from [Your University] in [Year]. Before that, I [brief background].</p>
+                
+                <div class="research-interests">
+                    <h3>Research Interests</h3>
+                    <ul>
+                        <li>Machine Learning Theory</li>
+                        <li>Statistical Learning</li>
+                        <li>Optimization</li>
+                        <li>High-Dimensional Statistics</li>
+                        <li>Reinforcement Learning</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="section">
+            <h2 class="section-title">Experience</h2>
             <div class="timeline">
                 <div class="timeline-item">
-                    <div class="timeline-date">2023 - 至今</div>
+                    <div class="timeline-date">2023 - Present</div>
                     <div class="timeline-content">
-                        <h3>职位名称</h3>
-                        <p class="company">公司/学校名称</p>
-                        <p>工作/学习内容描述...</p>
+                        <h3>Position Title</h3>
+                        <p class="institution">University/Company Name</p>
+                        <p>Description of your responsibilities and achievements.</p>
                     </div>
                 </div>
+                
                 <div class="timeline-item">
-                    <div class="timeline-date">2021 - 2023</div>
+                    <div class="timeline-date">2020 - 2023</div>
                     <div class="timeline-content">
-                        <h3>职位名称</h3>
-                        <p class="company">公司/学校名称</p>
-                        <p>工作/学习内容描述...</p>
+                        <h3>Previous Position</h3>
+                        <p class="institution">Previous University/Company</p>
+                        <p>Description of your responsibilities and achievements.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-date">2015 - 2020</div>
+                    <div class="timeline-content">
+                        <h3>Ph.D. Student</h3>
+                        <p class="institution">University Name</p>
+                        <p>Ph.D. in [Your Field]. Dissertation: [Your Dissertation Title].</p>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- 项目部分 -->
-    <section id="projects" class="section">
-        <div class="container">
-            <h2 class="section-title">项目展示</h2>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="https://via.placeholder.com/300x200" alt="项目图片">
-                    </div>
-                    <div class="project-info">
-                        <h3>项目名称</h3>
-                        <p>项目简短描述...</p>
-                        <div class="project-tech">
-                            <span>技术标签</span>
-                            <span>技术标签</span>
-                        </div>
-                        <a href="#" class="project-link">查看详情</a>
-                    </div>
+        <!-- Publications Section -->
+        <section id="publications" class="section">
+            <h2 class="section-title">Publications</h2>
+            <div class="publications-list">
+                <div class="publication-year">
+                    <h3>2024</h3>
+                    <ul>
+                        <li>
+                            <strong>Paper Title 1</strong><br>
+                            Author 1, Author 2, Author 3<br>
+                            <em>Conference/Journal Name</em>, 2024<br>
+                            [<a href="#">PDF</a>] [<a href="#">Code</a>] [<a href="#">Slides</a>]
+                        </li>
+                        <li>
+                            <strong>Paper Title 2</strong><br>
+                            Author 1, Author 2<br>
+                            <em>Conference/Journal Name</em>, 2024<br>
+                            [<a href="#">PDF</a>] [<a href="#">Code</a>]
+                        </li>
+                    </ul>
                 </div>
-                <!-- 更多项目卡片 -->
+                
+                <div class="publication-year">
+                    <h3>2023</h3>
+                    <ul>
+                        <li>
+                            <strong>Paper Title 3</strong><br>
+                            Author 1, Author 2, Author 3, Author 4<br>
+                            <em>Conference/Journal Name</em>, 2023<br>
+                            [<a href="#">PDF</a>] [<a href="#">Code</a>]
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </div>
-    </section>
+            
+            <div class="publication-links">
+                <a href="#" class="btn">View All Publications</a>
+                <a href="https://scholar.google.com" target="_blank" class="btn">Google Scholar</a>
+            </div>
+        </section>
 
-    <!-- 联系部分 -->
-    <section id="contact" class="section bg-light">
-        <div class="container">
-            <h2 class="section-title">联系我</h2>
+        <!-- Teaching Section -->
+        <section id="teaching" class="section">
+            <h2 class="section-title">Teaching</h2>
+            <div class="teaching-list">
+                <div class="course">
+                    <h3>Fall 2024</h3>
+                    <p><strong>Course Code: Course Name</strong></p>
+                    <p>Brief description of the course content and your role.</p>
+                </div>
+                
+                <div class="course">
+                    <h3>Spring 2024</h3>
+                    <p><strong>Course Code: Course Name</strong></p>
+                    <p>Brief description of the course content and your role.</p>
+                </div>
+                
+                <div class="course">
+                    <h3>Fall 2023</h3>
+                    <p><strong>Course Code: Course Name</strong></p>
+                    <p>Brief description of the course content and your role.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <h2 class="section-title">Contact</h2>
             <div class="contact-content">
                 <div class="contact-info">
                     <div class="contact-item">
                         <i class="fas fa-envelope"></i>
-                        <span>your.email@example.com</span>
+                        <div>
+                            <h3>Email</h3>
+                            <p>your.email@example.com</p>
+                        </div>
                     </div>
+                    
                     <div class="contact-item">
-                        <i class="fab fa-github"></i>
-                        <a href="https://github.com/您的用户名">GitHub</a>
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>Office</h3>
+                            <p>Room Number, Building Name<br>
+                            Street Address<br>
+                            City, State ZIP Code</p>
+                        </div>
                     </div>
+                    
                     <div class="contact-item">
-                        <i class="fab fa-linkedin"></i>
-                        <a href="#">LinkedIn</a>
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h3>Phone</h3>
+                            <p>+1 (123) 456-7890</p>
+                        </div>
                     </div>
                 </div>
+                
+                <div class="office-hours">
+                    <h3>Office Hours</h3>
+                    <p>Monday: 2:00 PM - 4:00 PM</p>
+                    <p>Wednesday: 10:00 AM - 12:00 PM</p>
+                    <p>Or by appointment</p>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
-    <!-- 页脚 -->
+    <!-- Footer -->
     <footer class="footer">
-        <div class="container">
-            <p>&copy; 2024 您的名字. 保留所有权利.</p>
-            <p>通过 GitHub Pages 部署</p>
+        <div class="footer-content">
+            <p>&copy; 2024 Jinjiang Zou. All rights reserved.</p>
+            <p>Last updated: December 2024</p>
+            <p>Hosted on GitHub Pages</p>
         </div>
     </footer>
 
