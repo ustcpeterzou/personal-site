@@ -7,82 +7,111 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="layout">
-        <div id="toptitle">
-            <h1>Jinjiang Zou</h1>
-            <div id="subtitle">
-                <p>Fourth Year Undergraduate Student</p>
-                <p>School of Gifted Young, University of Science and Technology of China</p>
-                <p>Mathematics and Applied Mathematics | Probability and Statistics</p>
-            </div>
-        </div>
-
-        <div id="main">
-            <!-- Contact Information -->
-            <h2>Contact</h2>
-            <p>
-                Email: <a href="mailto:zjj22chuang2@mail.ustc.edu.cn">zjj22chuang2@mail.ustc.edu.cn</a><br>
-                Address: 96 Jinzhai Road, Hefei, Anhui, China
-            </p>
-
-            <!-- About -->
-            <h2>About</h2>
-            <p>
-                I am a fourth year undergraduate student at the School of Gifted Young, USTC, 
-                majoring in Mathematics and Applied Mathematics with a focus on Probability 
-                Theory and Mathematical Statistics. I have strong interests in machine learning, 
-                high-dimensional statistics, and stochastic processes.
-            </p>
-
-            <!-- Education -->
-            <h2>Education</h2>
-            <p>
-                <strong>University of Science and Technology of China</strong><br>
-                B.S. in Mathematics and Applied Mathematics (Expected: June 2026)<br>
-                School of Gifted Young<br>
-                Specialization: Probability Theory and Mathematical Statistics
-            </p>
-
-            <!-- Research Interests -->
-            <h2>Research Interests</h2>
-            <ul>
-                <li>High-dimensional statistics and variable selection</li>
-                <li>Statistical machine learning theory</li>
-                <li>Deep learning theory</li>
-            </ul>
-
-            <!-- Research Projects -->
-            <h2>Research Projects</h2>
+    <table id="tlayout">
+        <tr valign="top">
+            <td id="layout-menu">
+                <div class="menu-category">Jinjiang Zou</div>
+                <div class="menu-item"><a href="#about">About</a></div>
+                <div class="menu-item"><a href="#education">Education</a></div>
+                <div class="menu-item"><a href="#research">Research</a></div>
+                <div class="menu-item"><a href="#projects">Projects</a></div>
+                <div class="menu-item"><a href="#skills">Skills</a></div>
+                <div class="menu-item"><a href="#awards">Awards</a></div>
+                
+                <div class="menu-category">Links</div>
+                <div class="menu-item"><a href="mailto:zjj22chuang2@mail.ustc.edu.cn">Email</a></div>
+                <div class="menu-item"><a href="#">GitHub</a></div>
+                <div class="menu-item"><a href="#">CV</a></div>
+            </td>
             
-            <h3>High Dimensional Dynamic Pricing with Strategic Buyers</h3>
-            <p><em>July 2024 - Present</em></p>
-            <p>
-                Investigating asymptotic distributions of high-dimensional LASSO estimators and 
-                proposed improved confidence interval construction methods.
-            </p>
-            <p><em>Advisor: Prof. Zheng</em></p>
-
-            <!-- Skills -->
-            <h2>Technical Skills</h2>
-            <ul>
-                <li><strong>Programming:</strong> Python, R, LaTeX</li>
-                <li><strong>Languages:</strong> Chinese (Native), English (Fluent)</li>
-            </ul>
-
-            <!-- Awards -->
-            <h2>Awards and Honors</h2>
-            <ul>
-                <li>The Chinese Mathematics Competitions for College Students (CMC) - Provincial First Prize (2024)</li>
-            </ul>
-
-            <!-- Footer -->
-            <div id="footer">
-                <div id="footer-text">
-                    Last updated: December 2025<br>
-                    © 2025 Jinjiang Zou
+            <td id="layout-content">
+                <div id="toptitle">
+                    <h1>Jinjiang Zou</h1>
+                    <div id="subtitle">
+                        <p>Fourth Year Undergraduate Student</p>
+                        <p>School of Gifted Young, University of Science and Technology of China</p>
+                        <p>Mathematics and Applied Mathematics | Probability and Statistics</p>
+                    </div>
                 </div>
-            </div>
-        </div>
-    </div>
+
+                <!-- About Section -->
+                <h2 id="about">About</h2>
+                <p>
+                    I am a fourth year undergraduate student at the School of Gifted Young, USTC, 
+                    majoring in Mathematics and Applied Mathematics with a focus on Probability 
+                    Theory and Mathematical Statistics. I have strong interests in machine learning, 
+                    high-dimensional statistics, and stochastic processes.
+                </p>
+
+                <!-- Education Section -->
+                <h2 id="education">Education</h2>
+                <p>
+                    <strong>University of Science and Technology of China</strong><br>
+                    B.S. in Mathematics and Applied Mathematics (Expected: June 2026)<br>
+                    School of Gifted Young<br>
+                    Specialization: Probability Theory and Mathematical Statistics
+                </p>
+
+                <!-- Research Interests -->
+                <h2 id="research">Research Interests</h2>
+                <ul>
+                    <li>High-dimensional statistics and variable selection</li>
+                    <li>Statistical machine learning theory</li>
+                    <li>Deep learning theory</li>
+                    <li>Bayesian methods and variational inference</li>
+                </ul>
+
+                <!-- Research Projects -->
+                <h2 id="projects">Research Projects</h2>
+                
+                <h3>High Dimensional Dynamic Pricing with Strategic Buyers</h3>
+                <p><em>July 2024 - Present</em></p>
+                <p>
+                    Investigating asymptotic distributions of high-dimensional LASSO estimators and 
+                    proposed improved confidence interval construction methods.
+                </p>
+                <p><em>Advisor: Prof. Zheng</em></p>
+
+                <h3>Bayesian Deep Learning via Variational Inference</h3>
+                <p><em>March 2023 - August 2023</em></p>
+                <p>
+                    Studied uncertainty quantification in deep neural networks. 
+                    Proposed efficient variational inference algorithms for Bayesian neural networks.
+                </p>
+                <p><em>Advisor: Prof. Wang</em></p>
+
+                <!-- Skills -->
+                <h2 id="skills">Technical Skills</h2>
+                <ul>
+                    <li><strong>Programming:</strong> Python, R, LaTeX</li>
+                    <li><strong>Statistics:</strong> SAS, SPSS</li>
+                    <li><strong>Languages:</strong> Chinese (Native), English (Fluent)</li>
+                </ul>
+
+                <!-- Awards -->
+                <h2 id="awards">Awards and Honors</h2>
+                <ul>
+                    <li>The Chinese Mathematics Competitions for College Students (CMC) - Provincial First Prize (2024)</li>
+                    <li>USTC Outstanding Student Scholarship (2023)</li>
+                    <li>School of Gifted Young Academic Star (2022)</li>
+                </ul>
+
+                <!-- Contact -->
+                <h2>Contact</h2>
+                <p>
+                    Email: <a href="mailto:zjj22chuang2@mail.ustc.edu.cn">zjj22chuang2@mail.ustc.edu.cn</a><br>
+                    Address: 96 Jinzhai Road, Hefei, Anhui, China
+                </p>
+
+                <!-- Footer -->
+                <div id="footer">
+                    <div id="footer-text">
+                        Last updated: December 2025<br>
+                        © 2025 Jinjiang Zou
+                    </div>
+                </div>
+            </td>
+        </tr>
+    </table>
 </body>
 </html>
